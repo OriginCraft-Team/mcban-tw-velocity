@@ -57,7 +57,6 @@ public class Main {
             continuation.resume();
             return;
         }
-        // TODO: 解決踢出邏輯
         if (mcBanTw.isBanned(event.getUniqueId())) {
             event.setResult(PreLoginEvent.PreLoginComponentResult.denied(Component.text(config.getString("ban-message"))));
             continuation.resume();
