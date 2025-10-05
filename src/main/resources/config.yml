@@ -1,0 +1,22 @@
+# 請勿變更
+file-version: 1
+
+# 是否啟用此插件
+ban-enable: true
+
+# 你的伺服器代號（例如 origincraft.tw)
+server-id: example.com
+
+# API 調用網址
+#   %server% 將會替換成你的 server 配置。
+#   %player% 則是在登入時檢查玩家是否被你選擇加入封鎖。
+api-url: https://mcban.tw/api/query?server=%server%&player=%player%
+
+# 當玩家被踢出時顯示的訊息
+ban-message: "你已被 McBanTW 平台封鎖"
+
+# 測試模式
+# 輸入在test-player的UUID會直接當作已封鎖玩家踢出並記錄
+# 測試完畢務必至bannedPlayerSave.yml刪除測試玩家UUID
+test: false
+test-player: "uuid"
